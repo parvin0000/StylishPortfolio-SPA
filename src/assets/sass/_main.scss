@@ -1,0 +1,221 @@
+a {
+  background-color: var(--default_blue);
+  border-radius: 10px;
+  border: none;
+  padding: 30px 50px;
+  font-weight: bold;
+  color: var(--white);
+  cursor: pointer;
+  transition: background-color 0.4s;
+  text-decoration: none;
+  &:hover {
+    background-color: var(--default_hover);
+  }
+}
+
+/* Header start */
+header {
+  background-image: url(../images/bg-masthead.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  padding: 250px 0;
+  text-align: center;
+  h1 {
+    font-size: 60px;
+  }
+  p {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 70px;
+  }
+}
+/* Header end */
+
+/* Main start */
+/* Offer start */
+#offer {
+  text-align: center;
+  padding: 120px 0;
+  h2 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 20px;
+    margin: 20px 0 70px 0;
+  }
+  span {
+    color: var(--default_blue);
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover {
+      color: var(--default_hover);
+    }
+  }
+  a {
+    background-color: var(--btn_black);
+    &:hover {
+      background-color: var(--btn_black_hover);
+    }
+  }
+}
+/* Offer end */
+
+/* Services start */
+#services {
+  background-color: var(--default_blue);
+  padding: 100px 0;
+  text-align: center;
+  color: var(--white);
+  h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  h3 {
+    margin: 10px 0;
+  }
+  h4 {
+    color: var(--gold);
+  }
+  i {
+    color: var(--default_blue);
+    background-color: var(--white);
+    padding: 35px;
+    border-radius: 50%;
+  }
+  p {
+    color: var(--btn_white_hover);
+  }
+}
+
+/* Services end */
+
+/* Welcome start */
+#welcome {
+  background-image: url(../images/bg-callout.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 200px 0;
+  height: auto;
+  text-align: center;
+  h2 {
+    font-size: 60px;
+    margin-bottom: 70px;
+  }
+}
+/* Welcome end */
+
+/* Portfolio start */
+#portfolio {
+  background-color: var(--white);
+  padding: 100px 0;
+  text-align: center;
+  color: var(--white);
+  h2 {
+    color: var(--btn_black);
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  h4 {
+    color: var(--gold);
+  }
+  .images {
+    position: relative;
+  }
+  .img {
+    background-image: url(../images/portfolio/portfolio-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    clip-path: inset(0);
+    transition: clip-path 0.4s;
+    position: relative;
+    &:hover {
+      clip-path: inset(20px);
+    }
+    &:nth-child(2) {
+      background-image: url(../images/portfolio/portfolio-2.jpg);
+    }
+    &:nth-child(3) {
+      background-image: url(../images/portfolio/portfolio-3.jpg);
+    }
+    &:nth-child(4) {
+      background-image: url(../images/portfolio/portfolio-4.jpg);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #17667f;
+      display: block;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+    }
+    &:hover::before {
+      opacity: 0.8;
+    }
+    .text-holder {
+      position: absolute;
+      bottom: 20%;
+      left: 5%;
+    }
+  }
+}
+/* Portfolio end */
+
+/* Resist start */
+#resist {
+  background-color: var(--default_blue);
+  padding: 100px 0;
+  text-align: center;
+  color: var(--white);
+  h2 {
+    margin-bottom: 50px;
+  }
+  a {
+    background-color: var(--white);
+    color: var(--btn_black);
+    &:hover {
+      background-color: var(--btn_white_hover);
+    }
+    &:nth-child(3) {
+      background-color: var(--btn_black);
+      color: var(--white);
+    }
+    &:nth-child(3):hover {
+      background-color: var(--btn_black_hover);
+      color: var(--white);
+    }
+  }
+}
+
+/* Resist end */
+
+/* Main end */
+
+/* Footer start */
+footer {
+  text-align: center;
+  padding: 60px 0;
+  i {
+    color: var(--white);
+    background-color: var(--default_blue);
+    padding: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    margin-bottom: 15px;
+    &:hover {
+      background-color: var(--default_hover);
+    }
+  }
+  span {
+    color: var(--btn_black_hover);
+  }
+}
+/* Footer end */
